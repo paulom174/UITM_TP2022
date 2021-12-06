@@ -4,11 +4,11 @@ import { Fade } from 'react-slideshow-image';
 import img1 from '../../assets/images/slide_1.jpg';
 import img2 from '../../assets/images/slide_2.jpg';
 import img3 from '../../assets/images/slide_3.jpg';
+import './style.css';
 
 const Slides = () => {
     return (
         <div>
-            <h2>Fade Effect</h2>
             <div className="slide-container">
                 <Fade>
                     <div className="each-fade">
@@ -18,7 +18,7 @@ const Slides = () => {
                         <p>First Slide</p>
                     </div>
                     <div className="each-fade">
-                        <p>Second Slide</p>
+                        <p id="second-slide">Second Slide</p>
                         <div>
                             <img src={img2} alt="Girl in a jacket"/>
                         </div>
@@ -27,7 +27,7 @@ const Slides = () => {
                         <div>
                             <img src={img3} alt="Girl in a jacket"/>
                         </div>
-                        <p>Third Slide</p>
+                        <p id="third-slide">Third Slide</p>
                     </div>
                 </Fade>
             </div>
