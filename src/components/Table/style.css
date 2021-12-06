@@ -1,0 +1,17 @@
+.column {
+    border-style: groove;
+    text-align: center;
+}
+
+div + div {
+  margin-left: 40px;
+}
+
+.columns {
+    margin: auto;
+    width: 75%;
+    border: 5px solid #FFFF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
