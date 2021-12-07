@@ -9,22 +9,21 @@ import {
     // NavBtnLink,
 } from "./NavbarElements";
 import SearchBar from "../SearchBar/index";
+import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavLogo to="/">
-                    Logo
-            </NavLogo>
+                    <img src={logo} alt="Girl in a jacket" />
+                    <h2>Weasy</h2>
+                </NavLogo>
                 <Bars />
                 <SearchBar> </SearchBar>
                 <NavMenu>
                     <NavLink to="/" activestyle>
                         Home
-                    </NavLink>
-                    <NavLink to="/about" activestyle>
-                        About
                     </NavLink>
                 </NavMenu>
             </Nav>
