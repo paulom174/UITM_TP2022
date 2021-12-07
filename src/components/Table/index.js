@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import 'bulma/css/bulma.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud, faCloudShowersHeavy, faSun, faCloudSun } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ import { faCloud, faCloudShowersHeavy, faSun, faCloudSun } from '@fortawesome/fr
 
 const Table = () => {
     return (
-        <div>
+        <div className="table">
             <div className="header">
                 <p className="page-title">5-Day Forecast.</p>
             </div>
