@@ -1,17 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@200&display=swap');
+
+
 .column {
     border-style: groove;
     text-align: center;
+    border-color: lightgrey;
+    border-width: 0.01ch;
 }
 
 div + div {
   margin-left: 40px;
 }
 
-.columns {
+.center {
     margin: auto;
     width: 75%;
-    border: 5px solid #FFFF00;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 3% 0;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #D8C3A5;
+}
+
+.page-title {
+    font-size: 400%;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.week-day {
+    font-size: 200%;
+    font-weight: bold; 
+}
+
+.temperature {
+    font-size: 250%;
+    font-weight: bold; 
+}
+
+.icon {
+    margin-top: 35px;
+}
+
+.date {
+    font-weight: 600;
+}
+
+.sky {
+    font-weight: 600;
 }

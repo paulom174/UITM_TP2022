@@ -1,46 +1,57 @@
 import React from 'react';
 import './style.css';
 import 'bulma/css/bulma.min.css';
-import { TiWeatherSunny, TiWeatherShower, TiWeatherCloudy, TiWeatherPartlySunny } from 'react-icons/ti';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCloud, faCloudShowersHeavy, faSun, faCloudSun } from '@fortawesome/free-solid-svg-icons'
+// import { TiWeatherSunny, TiWeatherShower, TiWeatherCloudy, TiWeatherPartlySunny } from 'react-icons/ti';
+// import { BsFillSunFill } from 'react-icons/bs';
+
 
 
 const Table = () => {
     return (
-        <div class="columns is-variable is-2">
-            <div class="column is-narrow">
-                <p>Friday</p>
-                <p>December 6th, 1:00pm</p>
-                <p><TiWeatherSunny></TiWeatherSunny></p>
-                <p>10ºC</p>
-                <p>clear sky</p>
+        <div>
+            <div className="header">
+                <p className="page-title">5-Day Forecast.</p>
             </div>
-            <div class="column is-narrow">
-                <p>Saturday</p>
-                <p>December 7th, 1:00pm</p>
-                <p><TiWeatherShower></TiWeatherShower></p>
-                <p>11ºC</p>
-                <p>light rain</p>
-            </div>
-            <div class="column is-narrow">
-                <p>Sunday</p>
-                <p>December 8th, 1:00pm</p>
-                <p><TiWeatherCloudy></TiWeatherCloudy></p>
-                <p>13ºC</p>
-                <p>broken clouds</p>
-            </div>
-            <div class="column is-narrow">
-                <p>Monday</p>
-                <p>December 9th, 1:00pm</p>
-                <p><TiWeatherSunny></TiWeatherSunny></p>
-                <p>16ºC</p>
-                <p>clear sky</p>
-            </div>
-            <div class="column is-narrow">
-                <p>Tuesday</p>
-                <p>December 10th, 1:00pm</p>
-                <p><TiWeatherPartlySunny></TiWeatherPartlySunny></p>
-                <p>8ºC</p>
-                <p>scattered clouds</p>
+            <div className="center">
+                <div class="columns is-variable is-2">
+                    <div class="column is-narrow">
+                        <p className="week-day">Friday</p>
+                        <p className="date">December 6th, 1:00pm</p>
+                        <p className="icon"><FontAwesomeIcon icon={faSun} size="4x"/></p>
+                        <p className="temperature">10ºC</p>
+                        <p className="sky">clear sky</p>
+                    </div>
+                    <div class="column is-narrow">
+                        <p className="week-day">Saturday</p>
+                        <p className="date">December 7th, 1:00pm</p>
+                        <p className="icon"><FontAwesomeIcon icon={faCloudShowersHeavy} size="4x"/></p>
+                        <p className="temperature">11ºC</p>
+                        <p className="sky">light rain</p>
+                    </div>
+                    <div class="column is-narrow">
+                        <p className="week-day">Sunday</p>
+                        <p className="date">December 8th, 1:00pm</p>
+                        <p className="icon"><FontAwesomeIcon icon={faCloud} size="4x"/></p>
+                        <p className="temperature">13ºC</p>
+                        <p className="sky">broken clouds</p>
+                    </div>
+                    <div class="column is-narrow">
+                        <p className="week-day">Monday</p>
+                        <p className="date">December 9th, 1:00pm</p>
+                        <p className="icon"><FontAwesomeIcon icon={faSun} size="4x"/></p>
+                        <p className="temperature">16ºC</p>
+                        <p className="sky">clear sky</p>
+                    </div>
+                    <div class="column is-narrow">
+                        <p className="week-day">Tuesday</p>
+                        <p className="date">December 10th, 1:00pm</p>
+                        <p className="icon"><FontAwesomeIcon icon={faCloudSun} size="4x"/></p>
+                        <p className="temperature">8ºC</p>
+                        <p className="sky">scattered clouds</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
