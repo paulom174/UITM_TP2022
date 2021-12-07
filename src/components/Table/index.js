@@ -14,6 +14,9 @@ const Table = () => {
             <div className="header">
                 <p className="page-title">5-Day Forecast.</p>
             </div>
+            <div className="name">
+                <p className="city-name">Porto, Portugal</p>
+            </div>
             <div className="center">
                 <div class="columns is-variable is-2">
                     <div class="column is-narrow">
