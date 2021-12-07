@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const SearchBar = () => {
@@ -9,10 +11,10 @@ const SearchBar = () => {
         <input
             type="text"
             id="header-search"
-            placeholder="Search blog posts"
+            placeholder="Search for a City"
             onChange={event => setSearch(event.target.value)}
         />
-        <button type="submit">Search</button>
+            <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
     </form>
 )};
 

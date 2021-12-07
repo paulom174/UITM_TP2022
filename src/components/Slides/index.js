@@ -15,10 +15,10 @@ const Slides = () => {
                         <div>
                             <img src={img1} alt="Girl in a jacket"/>
                         </div>
-                        <p>First Slide</p>
+                        <p id="first_slide">Porto</p>
                     </div>
                     <div className="each-fade">
-                        <p id="second-slide">Second Slide</p>
+                        <p id="second-slide">Lisboa</p>
                         <div>
                             <img src={img2} alt="Girl in a jacket"/>
                         </div>
@@ -27,7 +27,7 @@ const Slides = () => {
                         <div>
                             <img src={img3} alt="Girl in a jacket"/>
                         </div>
-                        <p id="third-slide">Third Slide</p>
+                        <p id="third-slide">Instambul</p>
                     </div>
                 </Fade>
             </div>

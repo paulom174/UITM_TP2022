@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 .each-fade {
   display: flex;
   width: 100%;
@@ -15,17 +17,20 @@
 
 .each-fade p {
   width: 25%;
-  font-size: 1em;
+  font-size: 5em;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0;
   background: lightblue;
+  font-family: 'Staatliches', cursive;
+
 }
 
 #second-slide {
      background: #E85A4F; 
+     color: white;
 }
 
 #third-slide {
