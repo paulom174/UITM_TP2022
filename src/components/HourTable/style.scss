@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@200&display=swap');
+
+
+.table .column {
+    border-style: groove;
+    text-align: center;
+    border-color: lightgrey;
+    border-width: 0.01ch;
+}
+
+.table div + div {
+  margin-left: 40px;
+}
+
+.table .center {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding-right: 15%;
+}
+
+.table .header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #D8C3A5;
+}
+
+.table .page-title {
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.table .name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 10px 0px;
+    margin-right: 3%;
+}
+
+.table p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.table .week-day {
+    font-size: 200%;
+    font-weight: bold; 
+}
+
+.table .temperature {
+    font-size: 250%;
+    font-weight: bold; 
+}
+
+.table .icon {
+    margin-top: 35px;
+}
+
+.table .date {
+    font-weight: 600;
+}
+
+.table .sky {
+    font-weight: 600;
+}
