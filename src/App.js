@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/days/:city" element={<DayForecast />} />
-        <Route path="/hours" element={<HourForecast />} />
+        <Route path="/days/:city/hours/:index" element={<HourForecast />} />
       </Routes>
     </Router>
   );

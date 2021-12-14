@@ -6,7 +6,6 @@ const DayForecast = () => {
     const [data, setData] = useState([]);
     const { city } = useParams();
 
-
     const parseData = (data) => {
         const parsed = {};
 
@@ -22,10 +21,19 @@ const DayForecast = () => {
 
         for(let i = 0; i < indexes.length; i++) {
             let item = data.list[indexes[i]];
-            parsed.days.push({ date: { monthDay: new Date(item.dt_txt).getDate(), weekDay: days[new Date(item.dt_txt).getDay()], month: months[new Date(item.dt_txt).getMonth()]}, temp: Math.round(item.main.temp), weather:{name:item.weather[0].main, description:item.weather[0].description}});
+            parsed.days.push({ 
+                date: { 
+                    monthDay: new Date(item.dt_txt).getDate(), 
+                    weekDay: days[new Date(item.dt_txt).getDay()], 
+                    month: months[new Date(item.dt_txt).getMonth()]
+                }, 
+                temp: Math.round(item.main.temp), 
+                weather:{
+                    name:item.weather[0].main, 
+                    description:item.weather[0].description
+                }
+            });
         }
-
-        parsed.all = data;
 
         setData(parsed);
     }
@@ -39,16 +47,13 @@ const DayForecast = () => {
     useEffect(() => {
         // Get city weather
         fetchData(city);
-    },[city]);
-
-    console.log(data);
+    }, [city]);
     
     return (
         <Table
             name={data.name}
             country={data.country}
             days={data.days}
-            data={data.all}
         />
     );
 };

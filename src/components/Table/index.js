@@ -2,6 +2,8 @@ import React from 'react';
 import './style.scss';
 import 'bulma/css/bulma.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Proptypes from 'prop-types';
+import { Link } from "react-router-dom";
 import { 
     faCloud, 
     faCloudShowersHeavy, 
@@ -9,8 +11,7 @@ import {
     faSnowflake,
     faBolt,
     faTint
-} from '@fortawesome/free-solid-svg-icons'
-import Proptypes from 'prop-types';
+} from '@fortawesome/free-solid-svg-icons';
 
 
 const Table = ({name, country, days}) => {
@@ -43,11 +44,15 @@ const Table = ({name, country, days}) => {
                         (day, i) => 
                             <>
                                 <div class="column is-narrow">
-                                    <p className="week-day">{day.date.weekDay}</p>
-                                    <p className="date">{day.date.month} {day.date.monthDay}th, 1:00pm</p>
-                                    <p className="icon">{map.get(day.weather.name)}</p>
-                                    <p className="temperature">{day.temp}ºC</p>
-                                    <p className="sky">{day.weather.description}</p>
+                                    <Link className="text-link" to={{
+                                        pathname: `../hours/${i}`
+                                    }}>
+                                        <p className="week-day">{day.date.weekDay}</p>
+                                        <p className="date">{day.date.month} {day.date.monthDay}th, 1:00pm</p>
+                                        <p className="icon">{map.get(day.weather.name)}</p>
+                                        <p className="temperature">{day.temp}ºC</p>
+                                        <p className="sky">{day.weather.description}</p>
+                                    </Link>
                                 </div>
                             </>
                         )}
