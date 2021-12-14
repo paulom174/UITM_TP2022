@@ -9,7 +9,6 @@ import {
     faSnowflake,
     faBolt,
     faTint
-
 } from '@fortawesome/free-solid-svg-icons'
 import Proptypes from 'prop-types';
 
