@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/days" element={<DayForecast />} />
+        <Route path="/days/:city" element={<DayForecast />} />
         <Route path="/hours" element={<HourForecast />} />
       </Routes>
     </Router>

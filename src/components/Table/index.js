@@ -3,8 +3,7 @@ import './style.scss';
 import 'bulma/css/bulma.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud, faCloudShowersHeavy, faSun, faCloudSun } from '@fortawesome/free-solid-svg-icons'
-// import { TiWeatherSunny, TiWeatherShower, TiWeatherCloudy, TiWeatherPartlySunny } from 'react-icons/ti';
-// import { BsFillSunFill } from 'react-icons/bs';
+
 
 
 
